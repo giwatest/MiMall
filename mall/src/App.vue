@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-
+import storage from './storage'
 export default {
   name: 'app',
   components: {
@@ -16,7 +16,7 @@ export default {
     }
   },
   mounted(){
-    
+    storage.setItem('a',1);
   }
 }
 </script>
